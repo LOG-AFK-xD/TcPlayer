@@ -658,7 +658,7 @@ async def deezer(client: Client, message_: Message):
         loc = file_path
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
-        callsmusic.pytgcalls.join_group_call(message_.chat.id, file_path)
+        callsmusic.pytgcalls.joingroupcall(message_.chat.id, file_path)
 
     await res.delete()
 
